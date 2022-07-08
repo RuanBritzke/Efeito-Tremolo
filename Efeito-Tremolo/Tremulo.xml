@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Ruan Carlo\OneDrive\Documents\Elétrica\2021.2\EEL7300 - Instrumentação Eletrônica\Projeto\Tremulo Modulação triangular\Kicad\Tremulo.kicad_sch</source>
+    <date>07/07/2022 19:33:16</date>
+    <tool>Eeschema (6.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Tremulo.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Referencia/" tstamps="/04b75106-8d7d-48e6-ae2b-ca4f98924cb4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Referencia.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LFO.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Modulador.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Entrada/" tstamps="/b39831ee-cb8e-4442-8c47-4d86917b9b34/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Entradas.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J101">
+      <value>AudioJack2</value>
+      <footprint>Customs:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="AudioJack2" description="Audio Jack, 2 Poles (Mono / TS)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Tremulo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a40a7479-2d6e-400a-af89-0ca2fea2a103</tstamps>
+    </comp>
+    <comp ref="SW101">
+      <value>STOMP SWITCH</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Tremulo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2e039d9-8151-4afa-a875-91a99df537cb 6703351a-d4f8-4173-9401-c880a56a2ecf</tstamps>
+    </comp>
+    <comp ref="C201">
+      <value>200u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Referencia"/>
+      <property name="Sheetfile" value="Referencia.kicad_sch"/>
+      <sheetpath names="/Referencia/" tstamps="/04b75106-8d7d-48e6-ae2b-ca4f98924cb4/"/>
+      <tstamps>6456a2ae-136a-4925-9fdb-83be3cb69396</tstamps>
+    </comp>
+    <comp ref="R201">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Referencia"/>
+      <property name="Sheetfile" value="Referencia.kicad_sch"/>
+      <sheetpath names="/Referencia/" tstamps="/04b75106-8d7d-48e6-ae2b-ca4f98924cb4/"/>
+      <tstamps>627d0fda-e8f3-42ea-a474-f4cbfa03e3eb</tstamps>
+    </comp>
+    <comp ref="R202">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Referencia"/>
+      <property name="Sheetfile" value="Referencia.kicad_sch"/>
+      <sheetpath names="/Referencia/" tstamps="/04b75106-8d7d-48e6-ae2b-ca4f98924cb4/"/>
+      <tstamps>d2bed78a-b7da-4aeb-8c6b-258ddd4d8da0</tstamps>
+    </comp>
+    <comp ref="U201">
+      <value>TL082</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl081.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL082" description="Dual JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8"/>
+      <property name="Sheetname" value="Referencia"/>
+      <property name="Sheetfile" value="Referencia.kicad_sch"/>
+      <sheetpath names="/Referencia/" tstamps="/04b75106-8d7d-48e6-ae2b-ca4f98924cb4/"/>
+      <tstamps>ed4ec7d6-47ec-4264-88b2-6e59ea0a396f 8b001efc-d33a-49c1-827d-344bfd5520a9</tstamps>
+    </comp>
+    <comp ref="C301">
+      <value>100n</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>013b7c87-c907-42e0-b3a6-15ba4e39ce5d</tstamps>
+    </comp>
+    <comp ref="R301">
+      <value>82k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>a941b7f2-4895-4bec-84a6-70db497ee08c</tstamps>
+    </comp>
+    <comp ref="R302">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>72735f73-c7c3-486b-bf3b-8e18460a7299</tstamps>
+    </comp>
+    <comp ref="R303">
+      <value>12k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>d1dd0664-8b24-4c2c-8ab4-ddbe2c39a0b4</tstamps>
+    </comp>
+    <comp ref="R304">
+      <value>300k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>7665129a-ae23-4df0-90d9-45a52cfb502c</tstamps>
+    </comp>
+    <comp ref="R305">
+      <value>380k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>bbb44e97-d8c6-413f-907c-55e51b4fbcf8</tstamps>
+    </comp>
+    <comp ref="RV301">
+      <value>2.2Meg</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>c22a5063-fae8-4bbe-a3fd-11c8cbd7d881</tstamps>
+    </comp>
+    <comp ref="RV302">
+      <value>10k</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>6a4b876b-729b-46f5-80c5-ba7a8f86dd03</tstamps>
+    </comp>
+    <comp ref="U301">
+      <value>TL084</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl081.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL084" description="Quad JFET-Input Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"/>
+      <property name="Sheetname" value="LFO"/>
+      <property name="Sheetfile" value="LFO.kicad_sch"/>
+      <sheetpath names="/LFO/" tstamps="/2f6708ff-f27a-4372-bc66-d391d09d282d/"/>
+      <tstamps>6d09cc07-4882-4265-9760-5009a8e78eed f4b345da-3098-4c56-a3ac-20dc5ee64e29 5d9dc291-a4d7-4928-89e9-cbfd13f1116b 01bd2fc4-5af7-49bb-8fa2-dcd12d9eb0dc</tstamps>
+    </comp>
+    <comp ref="C401">
+      <value>10u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>b40e499b-a568-4368-9e63-89bc7ed66d1a</tstamps>
+    </comp>
+    <comp ref="C402">
+      <value>47p</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>8394a388-d814-437b-ab87-b5341473cecb</tstamps>
+    </comp>
+    <comp ref="C403">
+      <value>22u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>fe42e6b2-7040-4f2b-8daa-210e3636b2d3</tstamps>
+    </comp>
+    <comp ref="R401">
+      <value>20k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>444567fc-f906-4afa-af27-636a202bc0bb</tstamps>
+    </comp>
+    <comp ref="R402">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>af897d79-e965-451f-930d-f762975a1f76</tstamps>
+    </comp>
+    <comp ref="R403">
+      <value>40k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>dc306d17-f50e-4d96-8ffc-1318aafaf2d0</tstamps>
+    </comp>
+    <comp ref="R404">
+      <value>50</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>da7f0b1e-f5d5-49a1-9cfe-e7c0860c6643</tstamps>
+    </comp>
+    <comp ref="R405">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>0dcb926e-9f23-4b7b-b832-6c5e5d189760</tstamps>
+    </comp>
+    <comp ref="U401">
+      <value>THAT2181</value>
+      <footprint>Package_SIP:SIP-8_19x3mm_P2.54mm</footprint>
+      <datasheet>http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf</datasheet>
+      <libsource lib="Amplifier_Audio" part="THAT2181" description="Blackmer Trimmable IC Voltage Controlled Amplifiers, SIP-8/SOIC-8"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>a09c9e81-90c2-467c-a27f-f6fdd09265e4</tstamps>
+    </comp>
+    <comp ref="U402">
+      <value>TL082</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl081.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL082" description="Dual JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8"/>
+      <property name="Sheetname" value="Modulador"/>
+      <property name="Sheetfile" value="Modulador.kicad_sch"/>
+      <sheetpath names="/Modulador/" tstamps="/925019c7-647d-437b-8f59-a4ce40aac9d9/"/>
+      <tstamps>e9173975-1d69-48fe-b16d-2420639ac60a e21e2eb9-9a2b-47bd-bef0-0f39dcb39798</tstamps>
+    </comp>
+    <comp ref="J501">
+      <value>Barrel_Jack</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="Sheetname" value="Entrada"/>
+      <property name="Sheetfile" value="Entradas.kicad_sch"/>
+      <sheetpath names="/Entrada/" tstamps="/b39831ee-cb8e-4442-8c47-4d86917b9b34/"/>
+      <tstamps>3c6e3ad5-4463-4252-a63e-56e9a3956130</tstamps>
+    </comp>
+    <comp ref="J502">
+      <value>AudioJack3</value>
+      <footprint>Customs:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="AudioJack3" description="Audio Jack, 3 Poles (Stereo / TRS)"/>
+      <property name="Sheetname" value="Entrada"/>
+      <property name="Sheetfile" value="Entradas.kicad_sch"/>
+      <sheetpath names="/Entrada/" tstamps="/b39831ee-cb8e-4442-8c47-4d86917b9b34/"/>
+      <tstamps>55170ff4-97fb-44fa-af2f-d0c6e4d3572d</tstamps>
+    </comp>
+    <comp ref="R501">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Entrada"/>
+      <property name="Sheetfile" value="Entradas.kicad_sch"/>
+      <sheetpath names="/Entrada/" tstamps="/b39831ee-cb8e-4442-8c47-4d86917b9b34/"/>
+      <tstamps>15a0d549-e2c8-4cd4-b716-fae960b87b51</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Audio" part="THAT2181">
+      <description>Blackmer Trimmable IC Voltage Controlled Amplifiers, SIP-8/SOIC-8</description>
+      <docs>http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf</docs>
+      <footprints>
+        <fp>SIP*19x3mm*P2.54mm*</fp>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">THAT2181</field>
+        <field name="Datasheet">http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="input"/>
+        <pin num="2" name="E+" type="input"/>
+        <pin num="3" name="E-" type="input"/>
+        <pin num="4" name="SYM" type="input"/>
+        <pin num="5" name="V-" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="TL082">
+      <description>Dual JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tl081.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TL082</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tl081.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="TL084">
+      <description>Quad JFET-Input Operational Amplifiers, DIP-14/SOIC-14/SSOP-14</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tl081.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+        <fp>SSOP*5.3x6.2mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TL084</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tl081.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="-" type="input"/>
+        <pin num="10" name="+" type="input"/>
+        <pin num="11" name="V-" type="power_in"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="-" type="input"/>
+        <pin num="14" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="AudioJack2">
+      <description>Audio Jack, 2 Poles (Mono / TS)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="S" name="" type="passive"/>
+        <pin num="T" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="AudioJack3">
+      <description>Audio Jack, 3 Poles (Stereo / TRS)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack3</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="R" name="" type="passive"/>
+        <pin num="S" name="" type="passive"/>
+        <pin num="T" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J501</field>
+        <field name="Value">Barrel_Jack</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="power_in"/>
+        <pin num="2" name="" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPDT_x2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Audio">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Amplifier_Audio.kicad_sym</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+9V">
+      <node ref="J501" pin="2" pintype="power_out"/>
+      <node ref="R201" pin="1" pintype="passive"/>
+      <node ref="R501" pin="1" pintype="passive"/>
+      <node ref="U201" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U301" pin="4" pinfunction="V+" pintype="power_in"/>
+      <node ref="U401" pin="7" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="2" name="/Entrada/Sinal de Entrada">
+      <node ref="J502" pin="T" pintype="passive"/>
+      <node ref="SW101" pin="2" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="3" name="/LFO/Modulante">
+      <node ref="U301" pin="8" pintype="output"/>
+      <node ref="U301" pin="9" pinfunction="-" pintype="input"/>
+      <node ref="U401" pin="2" pinfunction="E+" pintype="input"/>
+    </net>
+    <net code="4" name="/Modulador/Sinal de Entrada">
+      <node ref="C401" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="5" name="/Modulador/Sinal de Saída">
+      <node ref="C403" pin="1" pintype="passive"/>
+      <node ref="R405" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="4" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C201" pin="2" pintype="passive"/>
+      <node ref="J101" pin="S" pintype="passive"/>
+      <node ref="J501" pin="1" pintype="power_in"/>
+      <node ref="J502" pin="S" pintype="passive"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+      <node ref="R402" pin="2" pintype="passive"/>
+      <node ref="R405" pin="2" pintype="passive"/>
+      <node ref="U201" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U301" pin="11" pinfunction="V-" pintype="power_in"/>
+      <node ref="U402" pin="3" pinfunction="+" pintype="input"/>
+      <node ref="U402" pin="4" pinfunction="V-" pintype="power_in"/>
+    </net>
+    <net code="7" name="Net-(C201-Pad1)">
+      <node ref="C201" pin="1" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U201" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(C301-Pad1)">
+      <node ref="C301" pin="1" pintype="passive"/>
+      <node ref="R301" pin="2" pintype="passive"/>
+      <node ref="R305" pin="1" pintype="passive"/>
+      <node ref="U301" pin="7" pintype="output"/>
+    </net>
+    <net code="9" name="Net-(C301-Pad2)">
+      <node ref="C301" pin="2" pintype="passive"/>
+      <node ref="R304" pin="2" pintype="passive"/>
+      <node ref="U301" pin="6" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="10" name="Net-(C401-Pad2)">
+      <node ref="C401" pin="2" pintype="passive"/>
+      <node ref="R401" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(C402-Pad1)">
+      <node ref="C402" pin="1" pintype="passive"/>
+      <node ref="R403" pin="1" pintype="passive"/>
+      <node ref="U401" pin="8" pintype="output"/>
+      <node ref="U402" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="12" name="Net-(C402-Pad2)">
+      <node ref="C402" pin="2" pintype="passive"/>
+      <node ref="R403" pin="2" pintype="passive"/>
+      <node ref="R404" pin="2" pintype="passive"/>
+      <node ref="U402" pin="1" pintype="output"/>
+    </net>
+    <net code="13" name="Net-(C403-Pad2)">
+      <node ref="C403" pin="2" pintype="passive"/>
+      <node ref="R404" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(J101-PadT)">
+      <node ref="J101" pin="T" pintype="passive"/>
+      <node ref="SW101" pin="5" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(J502-PadR)">
+      <node ref="J502" pin="R" pintype="passive"/>
+      <node ref="R501" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(R301-Pad1)">
+      <node ref="R301" pin="1" pintype="passive"/>
+      <node ref="R302" pin="1" pintype="passive"/>
+      <node ref="U301" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="17" name="Net-(R302-Pad2)">
+      <node ref="R302" pin="2" pintype="passive"/>
+      <node ref="RV301" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U301" pin="1" pintype="output"/>
+    </net>
+    <net code="18" name="Net-(R303-Pad2)">
+      <node ref="R303" pin="2" pintype="passive"/>
+      <node ref="RV301" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(R304-Pad1)">
+      <node ref="R304" pin="1" pintype="passive"/>
+      <node ref="RV301" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(R305-Pad2)">
+      <node ref="R305" pin="2" pintype="passive"/>
+      <node ref="RV302" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(R401-Pad2)">
+      <node ref="R401" pin="2" pintype="passive"/>
+      <node ref="U401" pin="1" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(R402-Pad1)">
+      <node ref="R402" pin="1" pintype="passive"/>
+      <node ref="U401" pin="5" pinfunction="V-" pintype="power_in"/>
+    </net>
+    <net code="23" name="Net-(RV302-Pad2)">
+      <node ref="RV302" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U301" pin="10" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="24" name="Net-(SW101-Pad3)">
+      <node ref="SW101" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="SW101" pin="6" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(U402-Pad8)">
+      <node ref="U402" pin="8" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="26" name="Vref">
+      <node ref="R303" pin="1" pintype="passive"/>
+      <node ref="RV302" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U201" pin="1" pintype="output"/>
+      <node ref="U201" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U301" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U301" pin="5" pinfunction="+" pintype="input"/>
+      <node ref="U401" pin="3" pinfunction="E-" pintype="input"/>
+      <node ref="U401" pin="6" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="27" name="unconnected-(U401-Pad4)">
+      <node ref="U401" pin="4" pinfunction="SYM" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
